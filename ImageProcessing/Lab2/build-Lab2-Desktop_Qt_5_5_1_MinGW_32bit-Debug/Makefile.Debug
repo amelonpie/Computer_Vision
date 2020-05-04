@@ -239,7 +239,40 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-debug/main.o: ../Lab2/main.cpp 
+debug/main.o: ../Lab2/main.cpp D:/qt/OpenCV/opencv_use/include_use/opencv2/core/core.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/cvdef.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/hal/defs.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/version.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/base.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/cvstd.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/ptr.inl.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/hal.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/sse_utils.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/traits.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/matx.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/types.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/mat.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/bufferpool.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/mat.inl.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/persistence.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/operations.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/cvstd.inl.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/utility.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/core_c.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/types_c.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/optim.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc/imgproc.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc/imgproc_c.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc/types_c.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/highgui/highgui.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/highgui.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgcodecs.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/videoio.hpp \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/highgui/highgui_c.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgcodecs/imgcodecs_c.h \
+		D:/qt/OpenCV/opencv_use/include_use/opencv2/videoio/videoio_c.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\Lab2\main.cpp
 
 debug/mainwindow.o: ../Lab2/mainwindow.cpp ../Lab2/mainwindow.h \
@@ -389,55 +422,7 @@ debug/mainwindow.o: ../Lab2/mainwindow.cpp ../Lab2/mainwindow.h \
 		D:/qt/Qt5.5.1/5.5/mingw492_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\Lab2\mainwindow.cpp
 
-debug/self_writeup.o: ../Lab2/self_writeup.cpp D:/qt/OpenCV/opencv_use/include_use/opencv2/opencv.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/cvdef.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/hal/defs.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/version.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/base.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/cvstd.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/ptr.inl.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/hal.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/sse_utils.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/traits.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/matx.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/types.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/mat.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/bufferpool.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/mat.inl.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/persistence.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/operations.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/cvstd.inl.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/utility.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/core_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/types_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/optim.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc/imgproc_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgproc/types_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/photo.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/photo/photo_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/video.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/video/tracking.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/video/background_segm.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/video/tracking_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/features2d.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/flann/miniflann.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/flann/defines.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/flann/config.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/objdetect.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/objdetect/detection_based_tracker.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/objdetect/objdetect_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/calib3d.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/core/affine.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/calib3d/calib3d_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgcodecs.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/videoio.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/highgui.hpp \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/highgui/highgui_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/imgcodecs/imgcodecs_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/videoio/videoio_c.h \
-		D:/qt/OpenCV/opencv_use/include_use/opencv2/ml.hpp
+debug/self_writeup.o: ../Lab2/self_writeup.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\self_writeup.o ..\Lab2\self_writeup.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 

@@ -14,7 +14,8 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    self_writeup.cpp
+    self_writeup.cpp \
+    homework.cpp
 
 HEADERS  += mainwindow.h
 

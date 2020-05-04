@@ -8,7 +8,17 @@ Description for Lab2
 
 4. Understand the linear blending of two images. Implement the built-in function addWeighted(src1, alpha, src2, beta, gamma, dst). Don't forget saturate_cast<uchar>(). From now on, pls program in standard style, that specify the aim, input, output of the self-written function.
 
-5. Familiar with arithmetic operations.(Project 02-05) multiply(src1, src2, dst, coef)
+5. Familiar with arithmetic operations, including:
+
+   remapping: make sure the element values are within data type limit. e.g. 0-255 for Vec3b(uchar), 0-1 for Vec3f(float).
+   
+   (Project 02-05) multiply(src1, src2, dst, coef),divide, substract, adding
+   
+6. Homework: halftoning.
+
+   
+
+   
 
    
 

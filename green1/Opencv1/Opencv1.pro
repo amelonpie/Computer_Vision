@@ -25,6 +25,7 @@ INCLUDEPATH +=D:\qt\OpenCV\opencv_use\include_use\
               D:\qt\OpenCV\opencv_use\include_use\arithmetic_headfiles\
               D:\qt\OpenCV\opencv_use\include_use\arithmetic_headfiles\C\
               D:\qt\OpenCV\opencv_use\include_use\arithmetic_headfiles\C++\
+              D:\qt\OpenCV\opencv_use\include_use\melon_function\
 
 
 LIBS +=D:\qt\OpenCV\opencv_use\lib\libopencv_core300.dll.a\

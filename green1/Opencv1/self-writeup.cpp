@@ -2,6 +2,7 @@
 
 #include <opencv2/opencv.hpp>
 #include <iostream>
+#include <melon_function/mfunc_display.hpp>
 using namespace cv;
 using namespace std;
 
@@ -43,6 +44,9 @@ int main(int argc, char** argv){
 //    cout << "matlab = " <<endl << matlab <<endl;
 //    printf("Matlab = \n %d \n",matlab);
     Mat m2 = Mat::eye(2,2,CV_8UC1);
+
+    Mat ims(Size(img.cols*2,img.rows),img.type(),Scalar(0));
+    imshowpair_h(img, cvtedImg, ims);
 
     waitKey(0);
     return 0;
